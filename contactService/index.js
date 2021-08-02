@@ -21,27 +21,6 @@ export default class {
     search(query) {
         let results = [];
 
-        // for (let id in contacts) {
-        //     try {
-        //         this.service.getById(id)
-        //         .then(value => {
-        //             if (value && query && !JSON.stringify(value).includes(query)) {
-        //                 updates.emit('remove', id); //todo probably need to emit events but not sure what to do
-        //             }
-
-        //             // for (let k in value) {
-        //             //     if (k && query && query === value[k]) {
-        //             //         // results.push(value);
-        //             //         return value;
-        //             //         continue;
-        //             //     }
-        //             // }
-        //         });
-        //     } catch (e) {
-        //         console.log(e);
-        //     }
-        // }
-
         const testLock = Symbol('test.lock');
         contacts[lock] = testLock;
         contacts[unlock] = testLock;
